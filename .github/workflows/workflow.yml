@@ -1,0 +1,11 @@
+name: say-hello-workflow
+run-name: Say hello say-hello-workflow
+on:
+  push:
+    branches:
+    - "main"
+jobs:
+  say-hello:
+    runs-on: ubuntu-lastest
+    steps:
+      - run: echo Hello World
